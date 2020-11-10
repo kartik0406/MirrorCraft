@@ -1,0 +1,48 @@
+<%-include('partials/header')%>
+
+<div class="container">
+    <%if(logout && logout.length>0){%>
+  <div class="alert alert-success">
+    <strong><%=logout%></strong> 
+  </div>
+    <%}%>
+    <%if(login && login.length>0){%>
+  <div class="alert alert-success">
+    <strong><%=login%></strong> 
+  </div>
+    <%}%>
+  </div>
+<div class="container">
+<header class="jumbotron">
+    <div class="container">
+    <h1 class="text-center">Welcome To MirrorCraft!</h1>
+    <p class="text-center">View our hand-picked Images from all over the world</p>
+    <p class="text-center">
+        <a class="btn btn-primary btn-large text-center" href="/campgrounds/new">Add a new Image</a>
+    </p>
+</div>
+</header>
+<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+    <%campgrounds.forEach(function(campground){%>
+        <div class="col-md-3 col-sm-6">
+        
+         <div class="thumbnail">
+         <img src="<%=campground.image%>" alt="">
+        
+         <div class="caption">
+            <h3> <%=campground.name%></h3>
+         </div>
+         <p>
+             <a href="/campgrounds/<%=campground._id%>" class="btn btn-primary">More info</a>
+         </p>
+        </div>
+      </div>
+     
+  </li>
+  <%});%>
+
+</div>
+
+
+</div>
+<%-include('partials/footer')%>

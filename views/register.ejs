@@ -1,0 +1,28 @@
+<%-include('partials/header')%>
+
+
+<div class="container mt-5" style="margin-left: 55rem; margin-top: 16rem;">
+    <h1 class="white-color">Register</h1>
+  
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+  
+            <!-- Makes POST request to /register route -->
+            <form action="/register" method="POST">
+              <div class="form-group">
+                <label for="email" class="white-color">Email</label>
+                <input type="email" class="form-control" name="username" placeholder="username">
+              </div>
+              <div class="form-group">
+                <label for="password" class="white-color">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="password">
+              </div>
+              <button type="submit" class="btn btn-dark">Register</button>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+<%-include('partials/footer')%>
