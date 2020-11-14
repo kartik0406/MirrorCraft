@@ -17,7 +17,7 @@ app.use(express.static(__dirname+"/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 
-mongoose.connect("mongodb+srv://kartik_0406:Test123@clusterimagecraft.lr1yo.mongodb.net/image_craft?retryWrites=true&w=majority", { useNewUrlParser: true,useUnifiedTopology: true });
+mongoose.connect("mongodb://localhost:27017/MirrorCraft", { useNewUrlParser: true,useUnifiedTopology: true });
 
 app.set("view engine","ejs");
 mongoose.set('useFindAndModify', false);
