@@ -8,3 +8,8 @@ Now extract and open the folder.
 Now open the folder with terminal.
 Run commands: npm install nodemon app.js
 The server started locally at the port shown on terminal.
+
+**DEMO IMAGES**
+![](https://github.com/kartik0406/MirrorCraft/blob/main/MirrorCraft1.PNG)
+![](https://github.com/kartik0406/MirrorCraft/blob/main/MirrorCraft2.PNG)
+![](https://github.com/kartik0406/MirrorCraft/blob/main/MirrorCraft3.PNG)
