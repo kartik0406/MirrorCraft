@@ -1,7 +1,7 @@
 # MirrorCraft
-Freelance website to get and upload images for free
+Freelance website to get and upload images for free.
 
-For using the project:
+For using this project:
 
 Fork the project and download as a zip.
 Now extract and open the folder.
